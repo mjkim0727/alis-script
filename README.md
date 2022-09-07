@@ -8,7 +8,7 @@
 
 ## 구성
 
-- bl-tool(개발 중) : GRUB 부트로더 설정을 해주며, Welcome to GRUB! 메시지를 제거해줍니다.
+- bl-tool : GRUB 부트로더 설정을 해줍니다. (efibootmgr 기능은 지원하지 않음)
 - de-tool : DE 설정을 명령어 한 번에 해줍니다.
 
 ## 사용법(Usage)
@@ -32,12 +32,16 @@ pacstrap /mnt grub
 
 ### de-tool
 
+GNOME, KDE, Xfce를 미리 설치할 수 있으며, 비트토렌트 클라이언트와 필수 구성요소, 파이어폭스 웹 브라우저도 함께 설치됩니다.
+
+또한, sudoers 정책이 자동으로 변경됩니다.
+
 1. 사용자 계정을 생성하고 비밀번호를 설정합니다.
 2. 시간을 설정합니다.
 3. sudoer 파일을 수정하여 wheel 그룹이 sudo를 사용할 수 있게끔 정책을 변경합니다.
 
 ```
-./alis-tool.sh --desktop [plasma, gnome, xfce, mate]
+./alis-tool.sh
 ```
 
 - desktop : 데스크탑 환경을 선택합니다.
