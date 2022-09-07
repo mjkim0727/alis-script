@@ -2,7 +2,7 @@
 
 echo "Arch Linux Install Script ver 0.1-test"
 
-PS3='Select Desktop Environment: '
+PS3='Select Desktop Environment (GNOME, KDE, Xfce): '
 
 select item in "GNOME" "KDE" "Xfce"
 do
