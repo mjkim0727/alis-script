@@ -17,16 +17,16 @@ USB나 SD카드에 스크립트 파일을 복사한 후 아치 리눅스를 설�
 
 ### bl-tool
 
-먼저 GRUB를 설치하셔야 합니다.
+먼저 GRUB와 ntfs-3g를 설치하셔야 합니다.
 
 ```
 # arch-chroot 환경
 
-pacman -S grub
+pacman -S grub ntfs-3g
 
 # arch-chroot 이전
 
-pacstrap /mnt grub
+pacstrap /mnt grub ntfs-3g
 
 ```
 
