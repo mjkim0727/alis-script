@@ -32,7 +32,7 @@ pacstrap /mnt grub ntfs-3g
 
 ### de-tool
 
-GNOME, KDE, Xfce를 미리 설치할 수 있으며, 비트토렌트 클라이언트와 필수 구성요소, 파이어폭스 웹 브라우저도 함께 설치됩니다.
+GNOME, KDE, Xfce를 미리 설치할 수 있으며, 비트토렌트 클라이언트와 필수 유틸리티, 파이어폭스 웹 브라우저도 함께 설치됩니다.
 
 또한, sudoers 정책이 자동으로 변경됩니다.
 
@@ -45,3 +45,10 @@ GNOME, KDE, Xfce를 미리 설치할 수 있으며, 비트토렌트 클라이언
 ```
 
 - desktop : 데스크탑 환경을 선택합니다.
+
+#### de-tool 사용 시 설치되는 구성요소
+
+* 공통 - 파이어폭스 웹 브라우저
+* GNOME - gnome 그룹의 모든 패키지(epiphany, gnome-music, gnome-photos는 삭제됨), Papirus 아이콘 테마, 샷웰, 롤리팝(음악 플레이어), 폴라리(IRC 채팅), 에볼루션(메일)
+* KDE - Ktorrent, VLC(비디오 플레이어), Elisa(음악 플레이어), Kontact(PIM), Okular(문서 뷰어), Ark 압축 프로그램
+* Xfce - VLC(비디오 플레이어), 리듬박스(음악 플레이어), Pidgin(IRC 채팅), 에볼루션(메일), Xed(텍스트 편집기), Xreader(PDF 뷰어), MATE 계산기, 잉그람파 압축 프로그램
