@@ -15,6 +15,21 @@
 
 USB나 SD카드에 스크립트 파일을 복사한 후 아치 리눅스를 설치하고 있는 컴퓨터에 장착하십시오. 아치 리눅스가 설치 중인 컴퓨터는 chroot 상태에 있어야 합니다.
 
+### bl-tool
+
+먼저 GRUB를 설치하셔야 합니다.
+
+```
+# arch-chroot 환경
+
+pacman -S grub
+
+# arch-chroot 이전
+
+pacstrap /mnt grub
+
+```
+
 ### de-tool
 
 1. 사용자 계정을 생성하고 비밀번호를 설정합니다.
