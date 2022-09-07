@@ -32,7 +32,7 @@ do
             ;;
         3)
             pacman -Sy
-            pacman -S xfce4 xfce4-screenshooter xed xreader firefox engrampa papirus-icon-theme mate-calc xfce4-taskmanager xfce4-terminal thunar-archive-plugin shotwell vlc evolution highlight evolution-spamassassin rhythmbox libgpod gvfs xdg-user-dirs lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings qt5ct kvantum flatpak pidgin unrar noto-fonts-cjk noto-fonts-emoji noto-fonts fcitx5 fcitx5-gtk fcitx5-configtool system-config-printer sane cups cups-pdf wireplumber pipewire-alsa pipewire-pulse pipewire-jack ufw gufw exfat-utils
+            pacman -S xfce4 xfce4-screenshooter xed xreader firefox engrampa papirus-icon-theme mate-calc xfce4-taskmanager xfce4-terminal thunar-archive-plugin shotwell vlc evolution highlight evolution-spamassassin rhythmbox libgpod gvfs xdg-user-dirs lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings qt5ct kvantum flatpak pidgin unrar noto-fonts-cjk noto-fonts-emoji noto-fonts fcitx5 fcitx5-gtk fcitx5-configtool system-config-printer sane cups cups-pdf wireplumber pipewire-alsa pipewire-pulse pipewire-jack ufw gufw exfat-utils pavucontrol
             sed -i '/%wheel ALL=(ALL) ALL/s/^#//' /etc/sudoers
             cp ./src/lightdm.conf /etc/lightdm/lightdm.conf
             cp ./env/environment-etc /etc/environment
